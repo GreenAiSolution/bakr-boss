@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BAKR — Rings and fine jewelry, made one at a time</title>
+<meta name="description" content="BAKR is Boston's jewelry bench. Rings first, and everything else you would wear, made to order one piece at a time.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#top" aria-label="BAKR, back to top"><img src="assets/logo-ink.png" alt="BAKR"></a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#gallery">Gallery</a>
+    <a href="#how">Design with me</a>
+    <a href="about.html">About</a>
+  </nav>
+  <a class="pill" href="#start">Start a piece</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-meta">
+      <span>Fine jewelry · rings first</span>
+      <span>Made to order by Boston</span>
+    </div>
+    <div class="hero-mark">
+      <img src="assets/logo-ink.png" alt="BAKR">
+      <canvas id="heroGem" aria-hidden="true"></canvas>
+    </div>
+    <div class="hero-play">
+      <span class="picker-label">Change the cut. Your cursor is the light.</span>
+      <div class="chips" id="cuts" role="group" aria-label="Cut of the stone"></div>
+    </div>
+    <div class="hero-foot">
+      <h1>One at <em>a time.</em></h1>
+      <p>Boston makes rings, and everything else you would wear. Each piece is made to order, for one person. It starts with a conversation and ends on your hand.</p>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-run">
+      <span>Rings</span><i>Λ</i><span>Chains</span><i>Λ</i><span>Pendants</span><i>Λ</i><span>Earrings</span><i>Λ</i><span>Bracelets</span><i>Λ</i><span>Made to order</span><i>Λ</i>
+      <span>Rings</span><i>Λ</i><span>Chains</span><i>Λ</i><span>Pendants</span><i>Λ</i><span>Earrings</span><i>Λ</i><span>Bracelets</span><i>Λ</i><span>Made to order</span><i>Λ</i>
+    </div>
+  </div>
+
+  <section class="shop" id="shop">
+    <div class="shop-head reveal">
+      <div>
+        <p class="eyebrow">From the bench</p>
+        <h2>Pick one. <em>Boston makes it.</em></h2>
+      </div>
+      <div class="shop-ctrl">
+        <span class="shop-count" id="shopCount" aria-live="polite"></span>
+        <button type="button" class="round-btn" id="shopPrev" aria-label="Previous pieces">←</button>
+        <button type="button" class="round-btn" id="shopNext" aria-label="Next pieces">→</button>
+      </div>
+    </div>
+    <ol class="shop-track" id="shopTrack" tabindex="0" aria-label="Pieces you can buy"></ol>
+    <p class="shop-fine" id="shopFine" hidden>Sample pieces and sample prices, waiting on Boston's real list.</p>
+  </section>
+
+  <section class="pieces" id="gallery">
+    <div class="pieces-head reveal">
+      <p class="eyebrow">The gallery</p>
+      <h2>Rings first. <em>Then everything else.</em></h2>
+    </div>
+    <ol class="rows">
+      <li class="row reveal">
+        <span class="num">01</span>
+        <h3><a href="rings.html">Rings</a></h3>
+        <p>Engagement, wedding, signet, or the one you have had in your head for years. <span class="go">See the rings <i aria-hidden="true">→</i></span></p>
+        <svg viewBox="0 0 120 120" aria-hidden="true"><ellipse cx="60" cy="74" rx="34" ry="30"/><ellipse cx="60" cy="74" rx="27" ry="23"/><path d="M46 38h28l8 9-22 16-22-16z"/><path d="M38 47h44M52 38l-4 9 12 16 12-16-4-9"/></svg>
+      </li>
+      <li class="row reveal">
+        <span class="num">02</span>
+        <h3><a href="chains.html">Chains</a></h3>
+        <p>Link by link, to the length and weight you want to wear every day. <span class="go">See the chains <i aria-hidden="true">→</i></span></p>
+        <svg viewBox="0 0 120 120" aria-hidden="true"><rect x="12" y="48" width="36" height="22" rx="11"/><rect x="38" y="52" width="36" height="14" rx="7"/><rect x="64" y="48" width="36" height="22" rx="11"/><path d="M100 59h10"/></svg>
+      </li>
+      <li class="row reveal">
+        <span class="num">03</span>
+        <h3><a href="pendants.html">Pendants</a></h3>
+        <p>A stone, an initial, a shape that means something only to you. <span class="go">See the pendants <i aria-hidden="true">→</i></span></p>
+        <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M14 14c14 30 30 46 46 52 16-6 32-22 46-52"/><circle cx="60" cy="70" r="4"/><path d="M60 74l-14 18 14 18 14-18z"/><path d="M46 92h28"/></svg>
+      </li>
+      <li class="row reveal">
+        <span class="num">04</span>
+        <h3><a href="earrings.html">Earrings</a></h3>
+        <p>Studs, hoops and drops, made as a pair or as the one you lost. <span class="go">See the earrings <i aria-hidden="true">→</i></span></p>
+        <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="38" cy="66" r="22"/><path d="M38 44v-14"/><circle cx="84" cy="66" r="22"/><path d="M84 44v-14"/></svg>
+      </li>
+      <li class="row reveal">
+        <span class="num">05</span>
+        <h3><a href="bracelets.html">Bracelets</a></h3>
+        <p>Cuffs, bangles and chains sized to your wrist, not to a chart. <span class="go">See the bracelets <i aria-hidden="true">→</i></span></p>
+        <svg viewBox="0 0 120 120" aria-hidden="true"><ellipse cx="60" cy="60" rx="46" ry="30"/><ellipse cx="60" cy="56" rx="38" ry="22"/><path d="M40 86l-3 8M80 86l3 8"/></svg>
+      </li>
+    </ol>
+  </section>
+
+  <section class="how" id="how">
+    <p class="eyebrow reveal">Design with me</p>
+    <ol class="steps">
+      <li class="reveal"><span>1</span><h3>You tell Boston the idea</h3><p>A photo, a sketch on a napkin, a date, or just a feeling. Any of them is enough to start.</p></li>
+      <li class="reveal"><span>2</span><h3>You agree the design</h3><p>Metal, stone, size and price are settled before any work begins.</p></li>
+      <li class="reveal"><span>3</span><h3>Boston makes it</h3><p>One piece, made for you, from start to finish.</p></li>
+      <li class="reveal"><span>4</span><h3>It is yours</h3><p>You put it on, and it goes wherever you go.</p></li>
+    </ol>
+  </section>
+
+  <section class="start" id="start">
+    <div class="start-copy reveal">
+      <p class="eyebrow">Start a piece</p>
+      <h2>Tell Boston <em>what you see.</em></h2>
+      <p class="lede">Fill in what you know. Leave the rest blank. It goes straight to his inbox, and he will come back to you with questions, not a catalogue.</p>
+      <div class="carried" id="carried" hidden>
+        <span id="carriedLabel">You were looking at</span>
+        <strong id="carriedText"></strong>
+      </div>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <label class="field"><span>Your name</span><input name="name" autocomplete="name" required></label>
+      <label class="field"><span>How to reach you</span><input name="reach" placeholder="Phone, email or Instagram" required></label>
+      <label class="field"><span>What are we making</span>
+        <select name="piece">
+          <option>A ring</option><option>A chain</option><option>A pendant</option><option>Earrings</option><option>A bracelet</option><option>Not sure yet</option>
+        </select>
+      </label>
+      <label class="field"><span>Needed by <small>optional</small></span><input name="by" placeholder="A date, or no rush"></label>
+      <label class="field wide"><span>The idea</span><textarea name="idea" rows="4" placeholder="Who is it for, what should it feel like, anything you have seen and liked"></textarea></label>
+      <div class="form-actions wide">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <button class="gold-btn" type="submit">Send to Boston</button>
+        <span class="form-note" id="formNote"></span>
+      </div>
+      <div class="message wide" id="message" hidden>
+        <pre id="messageText"></pre>
+        <div class="message-actions">
+          <button type="button" class="ghost-btn" id="copy">Copy message</button>
+          <a class="ghost-btn" id="mail" hidden>Open in email</a>
+          <a class="ghost-btn" id="dm" hidden target="_blank" rel="noopener">Open Instagram</a>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="about" id="about">
+    <a class="about-photo reveal" href="about.html" aria-label="More about Boston">
+      <img src="assets/boston.jpg" alt="Boston taking a mirror self-portrait with a film camera" loading="lazy" width="1077" height="1600">
+    </a>
+    <div class="about-copy reveal">
+      <p class="eyebrow">About me</p>
+      <h2>I'm <em>Boston.</em></h2>
+      <dl class="about-facts">
+        <div><dt>Age</dt><dd>23</dd></div>
+        <div><dt>Hometown</dt><dd>Gilbert, Arizona</dd></div>
+        <div><dt>Making jewelry since</dt><dd>August 2018</dd></div>
+      </dl>
+      <p class="lede">Jewelry is an art to me. A piece should have a reason behind it, not just be another part of your wardrobe.</p>
+      <a class="gold-btn" href="about.html">More</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <img src="assets/logo-bone.png" alt="BAKR">
+  <div class="foot-row">
+    <span>© <span id="year"></span> BAKR · Made to order by Boston</span>
+    <span id="contacts"></span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="bakr.js"></script>
+<script src="gem.js"></script>
+<script src="main.js"></script>
+<script src="shop.js"></script>
+<script src="page.js"></script>
+</body>
+</html>
